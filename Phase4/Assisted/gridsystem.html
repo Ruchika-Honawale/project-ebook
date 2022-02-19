@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        font-family: sans-serif;
+        background-color: #c0c0c0;
+        font-size: 40px;
+        margin: 40px;
+
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 30px;
+      }
+      .el-1 {
+        background-color: blueviolet;
+        /* align-self: flex-end; */
+      }
+      .el-2 {
+        background-color: orangered;
+      }
+      .el-3 {
+        background-color: green;
+        height: 150px;
+      }
+      .el-4 {
+        background-color: goldenrod;
+        /* align-self: flex-start; */
+      }
+      .el-5 {
+        background-color: steelblue;
+      }
+      .el-6 {
+        background-color: crimson;
+      }
+      .el-7 {
+        background-color: coral;
+      }
+      .el-8 {
+        background-color: palevioletred;
+      }
+      .el-8 {
+        grid-column: 2 / -1;
+        grid-row: 1/3;
+      }
+      .el {
+        flex: 0 0 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="el el-1">One</div>
+      <div class="el el-2">Two</div>
+      <div class="el el-3">Three</div>
+      <div class="el el-4">Four</div>
+      <div class="el el-5">Five</div>
+      <div class="el el-6">Six</div>
+      <div class="el el-7">Seven</div>
+      <div class="el el-8">Eight</div>
+
+      <!-- <div class="el el-1"></div>
+      <div class="el el-2"></div>
+      <div class="el el-3"></div>
+      <div class="el el-4"></div>
+      <div class="el el-5"></div>
+      <div class="el el-6"></div>
+      <div class="el el-7"></div>
+      <div class="el el-8"></div> -->
+    </div>
+  </body>
+</html>

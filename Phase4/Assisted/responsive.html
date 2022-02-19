@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .left {
+        background-color: aqua;
+        padding: 20px;
+        float: left;
+        width: 20%;
+      }
+      .main {
+        background-color: orangered;
+        padding: 20px;
+        float: left;
+        width: 60%;
+      }
+      .right {
+        background-color: dodgerblue;
+        padding: 20px;
+        float: left;
+        width: 20%;
+      }
+      @media screen and (max-width: 800px) {
+        .left,
+        .main,
+        .right {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Responsiveness</h1>
+    <div class="left">Left menu</div>
+    <div class="main">Main content</div>
+    <div class="right">Right side content</div>
+  </body>
+</html>
