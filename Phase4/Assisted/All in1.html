@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing:borderboxing;
+        }
+        .left{
+            background-color:rebeccapurple;
+            padding: 100px;
+            float:left;
+            width:20%;
+        }
+        .main{
+            background-color: blue;
+            padding: 50px;
+            float:left;
+            width: 20;
+        }
+        .right{
+            background-color:aqua;
+            padding: 100px;
+            float:left;
+            width:20%;
+            @media screen and (max-width: 800px) {
+        .left,
+        .main,
+        .right {
+          width: 100%;
+        }
+      }
+        
+        }
+      .container {
+        font-family: sans-serif;
+        background-color: #c0c0c0;
+        font-size: 40px;
+        margin: 40px;
+
+        display: flex;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 30px;
+      }
+      .el-1 {
+        background-color: aqua;
+        /* align-self: flex-end; */
+      }
+      .el-2 {
+        background-color: aquamarine;
+      }
+      .el-3 {
+        background-color:azure;
+    
+      }
+      .el-4 {
+        background-color:green;
+        /* align-self: flex-start; */
+      }
+      .el-5 {
+        background-color: darkblue;
+      }
+      .el-6 {
+        background-color: hotpink;
+      }
+      .el-7 {
+        background-color:turquoise;
+      }
+      .el-8 {
+        background-color: palevioletred;
+      }
+      .el-8 {
+
+      }
+      .el {
+        flex: 0 0 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="el el-1">One</div>
+      <div class="el el-2">Two</div>
+      <div class="el el-3">Three</div>
+      <div class="el el-4">Four</div>
+      <div class="el el-5">Five</div>
+      <div class="el el-6">Six</div>
+      <div class="el el-7">Seven</div>
+      <div class="el el-8">Eight</div>
+
+      <!-- <div class="el el-1"></div>
+      <div class="el el-2"></div>
+      <div class="el el-3"></div>
+      <div class="el el-4"></div>
+      <div class="el el-5"></div>
+      <div class="el el-6"></div>
+      <div class="el el-7"></div>
+      <div class="el el-8"></div> -->
+    </div>
+  </body>
+</html>
